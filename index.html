@@ -4,10 +4,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hol Up!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+            min-height: 100vh;
+        }
+        
+        /* Event Zone Styles */
+        .event-zone {
+            background: white;
+            border-radius: 0 0 30px 30px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            animation: slideDown 1s ease-out;
+        }
+        
+        @keyframes slideDown {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .grade-tag {
+            background: #ff7675;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .event-title {
+            font-size: 2.5rem;
+            color: #2d3436;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .heart {
+            font-size: 2rem;
+            color: #ff7675;
+            margin: 10px 0;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .event-message {
+            font-size: 1.1rem;
+            color: #636e72;
+            line-height: 1.6;
+            margin: 25px 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .highlight {
+            background: #74b9ff;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px auto;
+            max-width: 500px;
+        }
+        
+        .highlight h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+        }
+        
+        .emoji {
+            font-size: 1.5rem;
+            margin: 0 5px;
+        }
+        
+        .sweet-note {
+            background: #fdcb6e;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 25px auto;
+            font-style: italic;
+            color: #2d3436;
+            max-width: 500px;
+        }
+        
+        /* Original Content Styles */
+        .main-content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .main-content h1 {
+            color: #2d3436;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+            line-height: 1.4;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        
+        @media (max-width: 768px) {
+            .event-title {
+                font-size: 2rem;
+            }
+            
+            .event-zone {
+                padding: 30px 15px;
+            }
+            
+            .main-content h1 {
+                font-size: 1.2rem;
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>This serve as future message if the maker of the card want to 🤣</h1>
-    <h1>Don't blame me i'm just out of idea. I just pick the 3LA superdurable™ - one of the best things i made with my hand... Trust me it really durable =)) Custom QR technology, heat press and so on.</h1>
-    <h1>WEll, i WILL update this page =))</h1>
+    <!-- Event Zone at the top -->
+    <div class="event-zone">
+        <div class="grade-tag">Grade 12 🎓</div>
+        
+        <h1 class="event-title">Senior Year!</h1>
+        <div class="heart">💕</div>
+        
+        <div class="event-message">
+            Can't believe you're starting your final year already! 
+            This is going to be such an amazing chapter.
+        </div>
+        
+        <div class="highlight">
+            <h3>You've Got This! <span class="emoji">✨</span></h3>
+            <p>College applications, graduation, and all the exciting stuff ahead - I know you'll crush it all!</p>
+        </div>
+        
+        <div class="sweet-note">
+            So proud of you and excited to cheer you on through senior year! 
+            <span class="emoji">🌟</span>
+        </div>
+    </div>
+    
+    <!-- Original content below -->
+    <div class="main-content">
+        <h1>I ask claude to make that =))</h1>
+        <h1>This serve as future message if the maker of the card want to 🤣</h1>
+        <h1>Don't blame me i'm just out of idea. I just pick the 3LA superdurable™ - one of the best things i made with my hand... Trust me it really durable =)) Custom QR technology, heat press and so on.</h1>
+        <h1>WEll, i WILL update this page =))</h1>
+    </div>
 </body>
 </html>
